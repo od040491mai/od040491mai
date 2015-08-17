@@ -1,67 +1,75 @@
 <!DOCTYPE html>
-<p lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>TASK3</title>
+    <meta charset="utf-8">
+    <title>Task 3.</title>
 </head>
-<p><label >Name</label><br><input type="text" ></p>
-<p><label>E-mail</label><br><input type="text" ></p>
-<p>Sex</p>
-<form>
-    <input type="radio" type="text" name="answer" value="a1">Male
-    <input type="radio" type="text" name="answer" value="a2">Femle
-</form>
-<p>Current status</p>
-<form>
-    <input type="checkbox">Student<br>
-    <input type="checkbox">Employed<br>
-    <input type="checkbox">Unemploed<br>
-</form>
-<p>Skills and technologies</p>
-<form>
+
+<body>
+<h1>Большая форма</h1>
+<form action="#" name ="form">
     <p>
-        <label >Month and Year of birth</label><br />
-        <select name="month" >
+        <label for="name">Name</label><br>
+        <input type="text" id = "name" name = "name">
+    </p>
+    <p>
+        <label for="email">Email</label><br>
+        <input type="email" id = "email" name = "email">
+    </p>
+    <p>
+        <label for="sex">Sex</label><br>
+        <input type="radio" id ="sex" name ="sex" value ="Male"> Male
+        <input type="radio" id ="sex" name ="sex" value ="Femaile"> Femaile
+    </p>
+    <p>
+        <label for="status">Current status</label><br />
+        <input type="checkbox" id ="status" name ="status" value ="Student">Student<br>
+        <input type="checkbox" id ="status" name ="status" value ="Employed">Employed<br>
+        <input type="checkbox" id ="status" name ="status" value ="Unemployed">Unemployed<br>
+    </p>
+    <p>
+        <label for="d_of_birth">Month and Year of birth</label><br>
+        <select name="month" id="d_of_birth">
             <option value="jan">January</option>
             <option value="feb">February</option>
             <option value="mar">March</option>
-
+            <option value="other">Other</option>
         </select>
-        <select name="year" >
+        <select name="year" id="d_of_birth">
             <option value="1984">1984</option>
             <option value="1985">1985</option>
             <option value="1986">1986</option>
+            <option value="other">Other</option>
         </select>
-</form>
-<form>
-    <p>
-    <label >Skills and Technologies</label><br />
-    <select name="skills"  multiple size = "10">
-        <optgroup label = "Tech skills">
-            <option value="html">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="JS">JavaScript</option>
-            <option value="git">git</option>
-        </optgroup>
-        <optgroup label = "Soft skills">
-            <option value="TM">Time management</option>
-            <option value="proactivity">Proactivity</option>
-            <option value="teamwork">Teamwork</option>
-            <option value="leader">Leadership</option>
-        </optgroup>
-    </select></form></p>
-<form>
-    <p>
-    <label >Photo</label><br />
-    <input type="file"  name = "photo" />
-</p>
-    <p>
-        <label >Comments</label><br />
-        <textarea name="comment"  cols="20" rows="4"></textarea>
     </p>
-    </form>
-    <form><p>
+    <p>
+        <label for="skills">Skills and Technologies</label><br>
+        <select name="skills" id="skills" multiple size = "10">
+            <optgroup label = "Tech skills">
+                <option value="html">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+                <option value="git">git</option>
+            </optgroup>
+            <optgroup label = "Soft skills">
+                <option value="TM">Time management</option>
+                <option value="proactivity">Proactivity</option>
+                <option value="teamwork">Teamwork</option>
+                <option value="leader">Leadership</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="photo">Photo</label><br>
+        <input type="file" id = "photo" name = "photo">
+    </p>
+    <p>
+        <label for="comment">Comments</label><br>
+        <textarea name="comment" id = "comment" cols="20" rows="4"></textarea>
+    </p>
+    <p>
         <input type="submit" value = "Save">
-    </p></form>
+    </p>
+</form>
 </body>
 </html>

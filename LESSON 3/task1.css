@@ -1,14 +1,46 @@
-body{font-size: 30px}
-h1{text-align:right;color:orange;}
-p:first-letter{font-size: 30px;color:red;}
-p{font-size: 30px; }
-em{background:green;}
-h2{color:orange;}
-ul li{font-weight: bold;}
-ol li {font-weight: normal;}
-.vegetables-list {color: red;}
-#allotment .fruits-list {color:grey;}
-#warehouse .fruits-list {color:green;}
-#warehouse  h2 {color: blue;}
-.students-table tbody td {  color: white; background-color: green;}
-.students-table tbody td:first-of-type {text-align: left; color: orange; background-color: white; }
+body{
+    font-size: 30px
+}
+h1{
+    text-align:right;
+    color:orange;
+}
+p:first-letter{
+    font-size: 30px;
+    color:red;
+}
+p{
+    font-size: 30px;
+}
+em{
+    background:green;
+}
+h2{
+    color:orange;
+}
+ul li,thead{
+    font-weight: bold;
+}
+ol li {
+    font-weight: normal;
+}
+.vegetables-list {
+    color: red;
+}
+#allotment .fruits-list {
+    color:grey;
+}
+#warehouse .fruits-list {
+    color:green;
+}
+#warehouse  h2 {
+    color: blue;
+}
+.students-table tbody td {
+    color: white;
+    background-color: green;
+}
+.students-table tbody td:first-of-type {
+    text-align: left;
+    color: orange;
+    background-color: white; }
