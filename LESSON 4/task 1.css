@@ -1,0 +1,18 @@
+li{
+    display:inline-block;
+    font-size:20px;
+    color:white;
+    padding:20px 20px;
+}
+p{  text-align:center;
+    width:900px;
+    font-family: impact;
+    background:mediumpurple;
+}
+li:hover{
+          background:white;
+          color:black;
+           padding:20px 20px;
+}
+div{background:mediumpurple;}
+
