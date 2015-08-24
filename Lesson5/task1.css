@@ -1,0 +1,38 @@
+.menu{
+    background-color: #1aa4ff;
+
+}
+.menu ul{
+    width: 900px;
+    margin: auto;
+
+}
+li{
+    display: inline-block;
+}
+a{
+    display: block;
+    font-family: Impact;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+li ul a {color: #a0a0a2;
+    font-family:Arial;
+    font-size:14px;
+    padding:10px 5px 10px 0;}
+li ul {
+    position: absolute;
+    display: none;
+    background-color:#eee;
+    color: #a0a0a2;
+    left:0;
+    right:0;
+}
+li a:hover {
+    background-color:#eee;
+    color: #a0a0a2;
+}
+li:hover ul{
+    display: block;
+}
