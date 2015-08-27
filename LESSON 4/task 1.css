@@ -1,18 +1,24 @@
+
 li{
     display:inline-block;
     font-size:20px;
     color:white;
     padding:20px 20px;
+    margin: auto;
 }
-p{  text-align:center;
+ol{  text-align:center;
     width:900px;
     font-family: impact;
     background:mediumpurple;
+    margin: auto;
+
+
 }
 li:hover{
           background:white;
           color:black;
            padding:20px 20px;
 }
-div{background:mediumpurple;}
+div{
+    background:mediumpurple;}
 
