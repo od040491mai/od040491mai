@@ -4,10 +4,11 @@ li{
     color:white;
     padding:20px 20px;
 }
-p{  text-align:center;
+ol{  text-align:center;
     width:900px;
     font-family: impact;
     background:mediumpurple;
+    margin:auto;
 }
 li:hover{
     background:white;
