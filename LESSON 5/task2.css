@@ -5,7 +5,7 @@
     border-width: 6px;
     border-color: rgb(238, 129, 41);
     border-radius: 5px;
-    width: 309px;
+    width: 300px;
 }
 .bodyPrice h1 {
     display: block;
@@ -110,4 +110,3 @@ input{
 input:hover{
     box-shadow: none;
 }
-
