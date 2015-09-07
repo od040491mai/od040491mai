@@ -62,11 +62,11 @@ nav li:last-child{
     background-size: cover;
 
 }
- .text {
-     text-align: center;
-     padding-top: 120px;
+.text {
+    text-align: center;
+    padding-top: 120px;
     color:white;
- }
+}
 h2{
     font-family: "Futura Bt Book",sans-serif;
     font-size: 36px;
@@ -109,8 +109,6 @@ button{
     text-decoration: none;
     background:none;
 }
-
-
 /*==============================================================================================================*/
 
 /*=============================================================================================*/
