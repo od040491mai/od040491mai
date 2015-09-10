@@ -1,5 +1,6 @@
 body{
     min-width: 1020px;
+    width: auto;
 
 }
 .all{
@@ -280,6 +281,8 @@ h3{
     text-align: center;
     background-repeat: repeat;
     min-width: 750px;
+    width:1400px;
+
 
 }
 .clientSays h2{
@@ -347,11 +350,147 @@ img{
     margin-left: 25px;
 }
 
+/*==========================================================================================================*/
+.dance{
+    position:relative;
+    top:90px;
+}
+.middle{
+    background-image:url("middle.jpg");
+    width:1400px;
+    height:585px;
+}
+.conteiner_middle{
+    position: absolute;
+    width:1020px;
+    left:190px;
+
+}
+.middle h1{
+    font-size:26px ;
+    color:#7b4f2a;
+    font-family: 'Trebuchet MS', 'Futura BT', sans-serif;
+}
+.middle p{
+    font-size:19px;
+    font-family: "Calibri Italic",sans-serif;
+    font-style: italic;
+    color:#dfe0e0;
+}
+.middle_ul{
+    position:relative;
+    top:30px;
+    list-style: none;
+}
+.middle_ul li{
+    color:#424342;
+    font-size:14px;
+    font-family: "Trebuchet MS";
+}
+.middle_ul .blue{
+    color:#4a6fa4;
+    font-size:14px;
+    font-family: "Trebuchet MS";
+}
+/*================================================================================*/
 
 
+.conteiner_s{
+    text-align: center;
+    width:1020px;
+    position:relative;
+    left:190px;
+    height: 560px;
+    top:70px;
+}
+.conteiner_s h1{
+    font-size:30px;
+    font-family: 'Trebuchet MS', 'Futura BT', sans-serif;
+}
+.conteiner_s tr{
+    width:33%;
+}
+.name_images td{
+    font-family: "Futura Bt Book";
+    font-size:30px;
+    color:#4a6fa4;
+    position:relative;
+    left:20px;
+}
+.text_s td{
+    font-family: 'Trebuchet MS', 'Futura BT', sans-serif;
+    font-size: 14px;
+    color:#d9d9d9;
+}
+/*=============================================================*/
 
+.footer{
 
-
-
-
-
+    background-color:#FFF;
+    width: 1400px;
+}
+.footer_wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.footer__contact{
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    text-align: left;
+    color: rgb(102, 102, 102);
+    line-height: 2.1;
+    position: relative;
+    top:42px;
+    left: 250px;
+    flex: 1;
+}
+.footer__map{
+    flex:1;
+    height: 345px;
+    background: url(footer_map.png) no-repeat;
+}
+.footer__dev{
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    color: rgb(255, 255, 255);
+    line-height: 2.143;
+    text-align: center;
+    background-color: #3070a8;
+    width: 1400px;
+    padding: 20px 0;
+    margin: 0;
+}
+.footer__dev_addres{font-style: normal;}
+.footer__dev_link{text-decoration: none;
+    color: #000;
+}
+.footer__contact_phone:before {
+    content: url("footer_icon_phone.png");
+    position:absolute;
+    left: -60px;
+    top: 125px;
+}
+.footer__contact_phone{
+    line-height: 3.5;
+}
+.footer__contact_name:before{
+    content: url("footer_icon_location.png");
+    position: absolute;
+    left: -60px;
+}
+.footer__contact_mail:before{
+    content: url("footer_icon_mail.png");
+    position: absolute;
+    left: -60px;
+}
+.footer__contact_icon{
+    position: absolute;
+    bottom: 125px;
+    left:190px;
+}
+.footer__contact_icon_fb,
+.footer__contact_icon_tw{
+    margin-right: 15px;
+}
