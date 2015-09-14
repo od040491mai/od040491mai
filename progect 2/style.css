@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    bottom: 0;
+}
+.portfolio{
+    width:auto;
+    text-align:center;
+}
+.container_p {
+
+    width:1180px;
+}
+.container_p p{
+    position: absolute;
+    top:120px;
+    left:600px;
+    font-family: "Lato Regular";
+    font-size: 15px;
+    color:#343c50;
+
+}
+.container_p h1{
+    position: absolute;
+    top:60px;
+    left:410px;
+
+    font-family: "Lato Regular";
+    font-size: 41px;
+    color:#343c50;
+
+
+}
+.all{
+    position: relative;
+    top:210px;
+    left:105px;
+}
+.img1{
+    display:inline-block;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color:#6ba7f3;
+
+
+}
+.img1:hover .image{opacity: 0.3;
+
+}
+.image{
+    width:360px;
+    height: 260px;
+    background-color:#6ba7f3;
+
+}
+
+.zoom,
+.link{
+    width:40px;
+    height:40px;
+    border:1px solid #FFFFFF;
+    border-radius:5px;
+}
+.zoom{
+    background: url("images/zoom_icon.png")  no-repeat;
+    background-position: center;
+
+
+}
+.link {
+    background: url("images/link_icon.png")  no-repeat;
+    background-position: center;
+}
+.zoom{
+    display:none;
+    position:absolute;
+    top:110px;
+    left:130px;
+}
+.link {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 185px;
+}
+.img1:hover .zoom{
+    display: block;
+}
+.img1:hover .link{
+    display:block;
+}
+.zoom:hover{
+    background-color: #16436a;
+}
+.link:hover{
+    background-color: #16436a;
+}
+

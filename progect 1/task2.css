@@ -5,8 +5,8 @@ body{
 }
 .all{
     box-sizing: border-box;
-    width:auto;
-    max-width: 1400px;
+
+    min-width: 1400px;
 
 }
 .header{
