@@ -34,7 +34,7 @@ body{
 
 .conteiner{
     width: 972px;
-    height: 2000px;
+    height:auto;
     border-radius: 3px;
     background-clip: padding-box;
     background-color: #fff;
