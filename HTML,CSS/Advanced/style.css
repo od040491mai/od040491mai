@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+}
+.header{
+    position: absolute;
+    background:url("img/Base.png") no-repeat #000000;
+    width:100%;
+    height:800px;
+    border-bottom:3px solid #4bcaff;
+}
+.logo{
+    position: absolute;
+    top:15px;
+    left:155px;
+}
+.menu{
+    list-style-type: none;
+    position: absolute;
+    top:40px;
+    left:520px;
+    width:850px;
+}
+.menu li {
+    display: inline-block;
+    margin-right: 35px;
+}
+menu li:last-child{
+    margin-right:0px;
+}
+.menu li a{
+    color: #a8b3bc;
+    font-family: "DroidSans", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #4bc9ff;
+    font-family: "DroidSans", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    border-top:2px solid #4bc9ff;
+}
+.header_menu_logo{
+    background: #0f1d2d;
+    height: 100px;
+    background-color: rgba(34, 57 ,76, 0.4);
+}
+.header-text{
+    position: absolute;
+    top:350px;
+    left:630px;
+}
+
+.header-text h1 {
+    color: #fff;
+    font-family: "Lato";
+    font-size: 48px;
+    text-shadow: 0 1px 3px rgba(25,22,24,.36);
+
+}
+.header-text p{
+    color: #fff;
+    font-family: "Lato";
+    font-size: 18px;
+    position: relative;
+    top:15px;
+}
+.header-buttons{
+    position: absolute;
+    top:520px;
+    left:630px;
+}
+.first-button,
+.second-button {
+    text-align: center;
+    display: inline-block;
+    width: 191px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 8px / 8px 8px 8px 8px;
+    background-clip: padding-box;
+}
+.first-button{
+    margin-right: 30px;
+}
+.first-button a{
+    position: relative;
+    top:20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: bold;
+}
+.second-button a{
+    position: relative;
+    top:20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: bold;
+}
+.first-button:hover{
+    border-radius: 8px;
+    background-color: #4bc9ff;
+    box-shadow: 0 4px 0 #277697;
+
+}
+.second-button:hover{
+    border-radius: 8px;
+    background-color: #4bc9ff;
+    box-shadow: 0 4px 0 #277697;
+}
+.nav{
+    position: absolute;
+    text-align: center;
+}
+.right-nav{
+    width:55px;
+    height: 55px;
+
+    background: no-repeat #1e3f51 ;
+    background-position: center;
+    opacity: .3;
+    border-radius: 100%;
+    position: absolute;
+    top:200px;
+    left:25px;
+}
+.right-nav a{
+    position: absolute;
+    top:15px;
+    left:20px;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+}
+
+.left-nav{
+    width:55px;
+    height: 55px;
+    background:  no-repeat #1e3f51;
+    background-position: center;
+    opacity: .3;
+    border-radius: 100%;
+    position: absolute;
+    top:200px;
+    left:1270px;
+}
+.left-nav a{
+    position: absolute;
+    top:15px;
+    left:20px;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+}
+
+.right-nav:hover{
+    background-color: #4bc9ff;
+}
+.left-nav:hover{
+    background-color: #4bc9ff;
+}
+.icons{
+    position: absolute;
+    top: 640px;
+    left:640px;
+}
+.icons p{
+    color: #fff;
+    font-family: "Lato";
+    font-size: 18px;
+}
+.apple{
+    width:55px;
+    height: 55px;
+    background: url("img/apple.png")  no-repeat #1e3f51;
+    background-position: center;
+    opacity: .3;
+    border-radius: 100%;
+    position: absolute;
+    top:-20px;
+    left:110px;
+}
+.apple:hover{
+    background-color: #4bc9ff;
+}
+.android{
+    width:55px;
+    height: 55px;
+    background: url("img/android.png")  no-repeat #1e3f51;
+    background-position: center;
+    opacity: .3;
+    border-radius: 100%;
+    position: absolute;
+    top:-20px;
+    left:180px;
+}
+.android:hover{
+    background-color: #4bc9ff;
+}
+.features{
+    width:100%;
+    position: absolute;
+    top:804px;
+    height:580px;
+    background: #f9f9f9;
+    border-bottom:1px solid #e7e7e7;
+    text-align: center;
+}
+.features div{
+    display:inline-block;
+    margin-right: 10px;
+}
+.features div:last-child{
+    margin-right: 0px;
+}
+.features h1{
+    position: relative;
+    top:30px;
+    color: #413f41;
+    font-family: "Lato";
+    font-size: 36px;
+}
+.features h2{
+    position: relative;
+    top:45px;
+    color: #413f41;
+    font-family: "Lato";
+    font-size: 20px;
+}
+.icon1,
+.icon2,
+.icon3,
+.icon4{
+    width:170px;
+    height: 170px;
+    border-radius: 100%;
+    border: 4px solid #efefef;
+}
+.icon1:hover,
+.icon2:hover,
+.icon3:hover,
+.icon4:hover{
+    border: 4px solid #efefef;
+}
+.item1,
+.item2,
+.item3,
+.item4{
+    position: relative;
+    top:140px;
+    text-align: center;
+}
+.icon1{
+    background:url("img/icon1.png")no-repeat #4bcaff;
+    background-position: center;
+}
+.icon1:hover{
+    background:url("img/icon1.png")no-repeat #414042;
+    background-position: center;
+}
+.icon2{
+    background:url("img/icon2.png")no-repeat #4bcaff;
+    background-position: center;
+}
+.icon2:hover{
+    background:url("img/icon2.png")no-repeat #414042;
+    background-position: center;
+}
+.icon3{
+    background:url("img/icon3.png")no-repeat #4bcaff;
+    background-position: center;
+}
+.icon3:hover{
+    background:url("img/icon3.png")no-repeat #414042;
+    background-position: center;
+}
+.icon4{
+    background:url("img/icon4.png")no-repeat #4bcaff;
+    background-position: center;
+}
+.icon4:hover{
+    background:url("img/icon4.png")no-repeat #414042;
+    background-position: center;
+}
+.text h3{
+    color: #413f41;
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top:20px;
+}
+.text p{
+    color: #838383;
+    font-family: "Lato";
+    font-size: 13px;
+    position: relative;
+    top:40px;
+
+}
