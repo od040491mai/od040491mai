@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+  var userName = prompt('Your name','');
+    if (userName =='admin'){
+        var password = prompt('Your password','');
+        if (password == 'passw0rd'){
+            alert('Welcome home!');
+        }else if (password == null){
+            alert('canceled');
+        }else{
+            alert('pasword wrong');
+        }
+    }
+
+    else if (userName == null){
+        alert('canceled');
+    }
+
+    else {
+        alert('Access denied');
+    }
+</script>
+
+</body>
+</html>

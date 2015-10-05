@@ -207,7 +207,7 @@ menu li:last-child{
     background-color: #4bc9ff;
 }
 .features{
-    width:100%;
+    min-width:100%;;
     position: absolute;
     top:804px;
     height:580px;
