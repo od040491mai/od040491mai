@@ -6,15 +6,15 @@
 </head>
 <body>
 <script>
-    var num;
-    for(num=0;num<100;num++) ;
-    if(num%3==0){
-        alert(num+'fizz');
+    for(var i = 1; i <= 100; i++){
+        if(i%3 == 0){
+            console.log('Fizz');
+        }else if(i%5 == 0){
+            console.log('Buzz');
+        }else{
+            console.log(i);
+        }
     }
-    if(num%5==0){
-        alert(num+'buzz');
-    }
-    alert(num)
 </script>
 </body>
 </html>

@@ -6,15 +6,16 @@
 </head>
 <body>
 <script>
- firstScript:
-    for(n=2;n<=10;n++){
-        var j;
-        for(j=2;j<n;j++){
-            if( n % j == 0) continue firstScript;{
-                alert(n);
-            }
+    function fib(n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fib(n-1) + fib(n-2);
         }
     }
+    console.log(fib(1))
+    console.log(fib(3));
+    console.log(fib(7));
 </script>
 </body>
 </html>
