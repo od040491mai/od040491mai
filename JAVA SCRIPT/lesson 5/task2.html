@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var image = {
+        width: 100,
+        height: 400,
+        title: 'Cool image'
+    };
+
+
+    function multiplyNumeric (image) {
+        for (var prop in image) {
+            if (typeof(image[prop]) == 'number'){
+                image[prop] *= 2;
+            };
+        };
+        return image;
+    };
+</script>
+</body>
+</html>

@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    function fib(n) {
-        if (n <= 1) {
-            return n;
-        } else {
-            return fib(n-1) + fib(n-2);
+
+        var n=+prompt('введите число');
+        if(n>=0){
+            var num=n- Math.floor(n);
+        }else if(n<0){
+            var num=Math.floor(n)-n;
         }
-    }
-    console.log(fib(1))
-    console.log(fib(3));
-    console.log(fib(7));
+        alert(num);
+ 
 </script>
 </body>
 </html>

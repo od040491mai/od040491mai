@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function getSum () {
+        var sum = 0;
+
+        while (true){
+            var number = prompt('Type your number: ');
+            if (number === '' || typeof(number) === 'object' || isNaN(number)) {
+                break;
+            };
+            sum += +number;
+        };
+
+        return sum;
+    };
+
+    getSum();
+</script>
+</body>
+</html>
