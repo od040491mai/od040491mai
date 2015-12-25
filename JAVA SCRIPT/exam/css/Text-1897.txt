@@ -1,0 +1,14 @@
+    elif isinstance(func, (str, bytes)):
+        if isinstance(obj, BaseMultiGlobalsVars):
+            return filter(func, obj)
+        return filter(func, context)
+        
+        filter(pages.pagetitle != 'vasa', pages.published == True)
+        
+
+{%- for item in pages.filter(pages.pagetitle != 'vasa', pages.published == True) %}
+    {{ item }}
+{%- endfor %}
+{%- for item in pages('pagetitle', 'id') %}
+    {{ item | sort }}
+{%- endfor %}

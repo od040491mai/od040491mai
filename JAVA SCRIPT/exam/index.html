@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TOTUS-TECHNICA</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!-- Component styles -->
+	<script src="js/modernizr-custom.js"></script>
+	
+ <script type="text/javascript">
+	 	window.onbeforeunload = function (e) { 
+  // Ловим событие для Interner Explorer 
+  var e = e || window.event; 
+  var myMessage= ""; 
+  // Для Internet Explorer и Firefox 
+  if (e) { 
+    e.returnValue = myMessage; 
+  } 
+  // Для Safari и Chrome 
+  return myMessage; 
+}; 
+	 </script>
+</head>
+
+<body>
+<div id="pagewrap" class="pagewrap">
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<div class="dummy-logo">
+				<div class="dummy-icon"><a href="index.html"><img src="img/totus.png" width="60%"></a></div>
+<a class="dummy-heading" href="index.html">Тел. (0482) 355-413</a>
+			</div>
+			
+			<div class="bp-header__main">	
+
+				<li>
+				<a class="pageload-link bp-header__title" href="#">| О Компании</a>
+				<a href="#" class="bp-header__title">| Контакты |</a>
+				</li>
+			
+			</div>
+		</header>
+		<button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+		<nav id="ml-menu" class="menu">
+			<button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+			<div class="menu__wrap">
+				<ul data-menu="main" class="menu__level">
+					<li class="menu__item"><a class="menu__link"  href="#">Вилочные погрузчики</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Фронтальные погрузчики</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Китайские фронтальные погрузчики</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Мини экскаваторы</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Ричтраки</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Краны-манипуляторы</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Бетононасосы</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Бульдозеры</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Спецтехника и оборудование</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Вышки и подъёмные устройства</a></li>
+					<li class="menu__item"><a class="menu__link"  href="#">Запчасти к погрузчикам</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Аренда</a></li>
+              		<li class="menu__item"><a class="menu__link" href="#">Двигатели к автопогрузчикам</a></li>
+				</ul> 
+			</div>
+		</nav>
+		<div class="content content-main-bg">		
+			
+			
+		
+		<!--<iframe class="pageload-link"  src="homev2.html"></iframe>-->
+		<img src="img/bg.jpg">
+		
+		
+		</div>
+	</div>
+	<!-- /view -->
+	
+	</div><!-- /pagewrap -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/main.js"></script>	
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');	
+
+		function callIframe(url) {
+			gridWrapper.innerHTML = '<iframe frameborder="0" id="gridframe" height="100%" width="100%" onload="window.parent.scrollTo(0,0)"></iframe>';
+			$('iframe#gridframe').attr('src', url);
+		    }
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				callIframe(dummyData[itemName]);
+			}, 700);
+		}
+		
+		$( ".bp-header__title" ).on("click", function(event){
+			event.preventDefault();
+			var itemName = $(this).text();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				callIframe(dummyData[itemName]);
+			}, 700);			
+		});		
+		
+		if ((screen.width<=800) && (screen.height<=1280)) {
+	      
+		  gridWrapper.innerHTML += '<img src="img/bg2.jpg">'
+	      
+		}		
+	})();
+	</script>
+</body>
+
+</html>
