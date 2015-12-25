@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .btn {
+            cursor: pointer;
+            text-decoration: underline;
+            color: red;
+        }
+        .notification {
+            position: fixed;
+            z-index: 1000;
+            padding: 5px;
+            border: 1px solid black;
+            font: normal 20px Georgia;
+            background: white;
+            text-align: center;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn notification" onclick="getSize()">Размер прокрутки снизу</div>
+    <div id="testScroll" style="width: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam atque maxime nihil ratione repellat sapiente unde voluptate? Aspernatur atque exercitationem labore minus molestiae nostrum porro ut. Cum odio, voluptate!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam delectus deleniti dicta doloremque eligendi in libero maiores maxime, odio quae qui, quidem quo repellat, sequi sit tenetur vel voluptatem!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eaque earum eum hic iusto molestias nemo nihil, obcaecati officia qui sed soluta vel voluptates! A corporis culpa enim et voluptas.</div>
+
+    <script>
+        function getSize(){
+            var elem = document.body;
+            var size = elem.scrollHeight - elem.scrollTop - elem.clientHeight;
+            alert(size);
+        }
+    </script>
+</body>
+</html>
