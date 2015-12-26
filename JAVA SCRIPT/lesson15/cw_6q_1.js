@@ -1,6 +1,4 @@
-/**
- * Created by pastushenko-av on 25.11.2015.
- */
+
 function NamedOne(first, last) {
     this.firstName = first;
     this.lastName = last;

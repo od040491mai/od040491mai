@@ -1,6 +1,4 @@
-/**
- * Created by pastushenko-av on 23.11.2015.
- */
+
 function Counter() {
     this.value = 0;
 }
